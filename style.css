@@ -75,22 +75,6 @@ button{
     white-space: nowrap;
 }
 
-.container{
-    height: 70vh;
-    width: 100vh;
-    background-color: rgba(255, 255, 255, 0.1);
-     backdrop-filter: blur(12px);
-    margin-left: 25%;
-    margin-top: 80px;
-    border: 1px solid rgba(255, 255, 255, 0.5) ;
-    box-shadow: 0 10px 30px black;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-   
-}
 
 .location{
     font-size: 30px;
@@ -126,4 +110,91 @@ button{
     gap: 20px;
     color: white;
    
+}
+
+/* Container — fix the width bug and make it fluid */
+.container{
+    height: 70vh;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    margin: 40px auto 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .nav{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .navLeft, .navRight{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Heading{
+        font-size: 32px;
+    }
+
+    .imgLogo{
+        height: 55px;
+    }
+
+    .inputLocation{
+        flex: 1;
+        min-width: 0;
+    }
+
+    .container{
+        height: auto;
+        padding: 30px 15px;
+        margin-top: 20px;
+    }
+
+    .temperature{
+        font-size: 48px;
+    }
+
+    .location{
+        font-size: 24px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .Heading{
+        font-size: 26px;
+    }
+
+    .navRight{
+        flex-direction: column;
+    }
+
+    .inputLocation{
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .temperature{
+        font-size: 38px;
+    }
+
+    .direction{
+        flex-direction: column;
+        gap: 8px;
+    }
 }
