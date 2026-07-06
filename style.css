@@ -198,3 +198,24 @@ button{
         gap: 8px;
     }
 }
+
+/* Fix search input text size */
+@media (max-width: 768px) {
+    .inputLocation{
+        font-size: 16px;
+        height: 44px;
+        padding: 0 15px;
+    }
+
+    .inputLocation::placeholder{
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media (max-width: 400px) {
+    .inputLocation{
+        font-size: 16px;
+        height: 44px;
+    }
+}
