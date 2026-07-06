@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <video class="video" autoplay muted loop id="bgVideo">
+        <source src="BgVideos/nightCloudy.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header Section -->
+
+    <header>
+    <nav class="nav">
+        <div class="navLeft">
+            <h1 class="Heading">Weather Forecast</h1>
+            <img class="imgLogo" src="BgVideos/WeatherLogoPng-removebg-preview.png" alt="Logo">
+        </div>
+
+        <div class="navRight">
+            <input class="inputLocation" type="text" placeholder="Enter Your Location">
+            <button>Check Weather</button>
+        </div>
+    </nav>
+</header>
+
+    <!-- Main Card Section -->
+
+    <div class="container">
+        <div class="location">Your Location</div>
+        <div class="temperature"> 27`C</div>
+        <div class="feelslike">Feels Like: 43 C</div>
+        <div class="dayNight">Night</div>
+        <div class="windSpeed">30 km per Hour</div>
+        <div class="direction">
+            <div class="latitude">32.5555</div>
+            <div class="longitude">97.47387</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

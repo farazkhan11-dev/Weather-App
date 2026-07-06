@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Video — force it to always fill the viewport */
+#bgVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* NavBar — use gap instead of a fixed margin, spread groups evenly */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 90px;
+    backdrop-filter: blur(12px);
+    padding: 10px 30px;
+    box-shadow: 0 10px 30px black;
+    gap: 20px;
+}
+
+.navLeft{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Heading{
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.imgLogo{
+    height: 70px;
+    width: auto;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inputLocation{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+    outline: none;
+}
+
+button{
+    background-color: rgb(0, 149, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.container{
+    height: 70vh;
+    width: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(12px);
+    margin-left: 25%;
+    margin-top: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.5) ;
+    box-shadow: 0 10px 30px black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.location{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+   
+}
+
+.temperature{
+    font-size:70px ;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.feelslike{
+    font-size: 20px;
+    color: white;
+   
+
+}
+
+.dayNight , .windSpeed{
+
+  font-size: 15px;
+  color: white;
+  padding: 20px;
+}
+
+.direction{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+   
+}
